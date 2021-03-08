@@ -1,0 +1,35 @@
+<!-- Java Script can display text/content in various ways: -->
+<!-- 1. Using innnerHTML -->
+<!-- 2. Using document.write() -->
+<!-- 3. Using window.alert() -->
+<!-- 4. Using console.log() -->
+
+
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <h1>My First Paragraph</h1>
+    <p id="demo"></p>
+
+    <script>
+        // Using innerHTML to displat the content.
+        document.getElementById('demo').innerHTML = "Hello, this is using innerHTML";
+
+        // Using document.write()
+        // Be careful while using this method as it wipes out all the HTML present on the page. Thus it is only used in testing.
+        // document.write("This is using documnet.write() method");
+
+        // Using window.alert() method
+        // This method creates a popup dilouge box with the content we specify
+        window.alert("This is using window.alert() method");
+
+        // Using console.log()
+        // These messages wont be visible on the screen directly. In order to view them, we will have to go the console window in the Inspect Element tab.
+        console.log("This is using console.log() method");
+    </script>
+</body>
+
+</html>
